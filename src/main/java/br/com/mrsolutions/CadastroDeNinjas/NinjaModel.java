@@ -7,10 +7,10 @@ import jakarta.persistence.*;
 public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;// vai ser gerado automaticamente por numeros sequenciais !!!
-    String nome;
-    int idade;
-    String email;
+    private Long id;// vai ser gerado automaticamente por numeros sequenciais !!!
+    private String nome;
+    private int idade;
+    private String email;
     public NinjaModel() {
     }
     public NinjaModel(String nome, int idade, String email) {
